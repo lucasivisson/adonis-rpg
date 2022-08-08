@@ -117,8 +117,6 @@ test.group('Password', (group) => {
       })
       .expect(410)
 
-    console.log(body)
-
     assert.equal(body.code, 'TOKEN_EXPIRED')
     assert.equal(body.message, 'token has expired')
     assert.equal(body.status, 410)
